@@ -3,10 +3,13 @@
  *
  */
 
-var theWebUI = {
-	version: "5.2.7",
-	tables: {
-		trt: {
+var theWebUI =
+{
+  	version: "4.3.1",
+	tables:
+	{
+		trt:
+		{
 			obj: new dxSTable(),
 			columns: [
 				{ text: theUILang.Name, 		width: "200px", id: "name",		type: TYPE_STRING },
