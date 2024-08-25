@@ -1,14 +1,6 @@
-# ruTorrent
+# angelicdust/ruTorrent
 
-ruTorrent is a front-end for the popular Bittorrent client [rtorrent](http://rakshasa.github.io/rtorrent).
-
-This project is released under the GPLv3 license, for more details, take a look at the LICENSE.md file in the source.
-
-## Main features
-
-* Lightweight server side, so it can be installed on old and low-end servers and even on some SOHO routers
-* Extensible - there are several plugins and everybody can create their own one
-* Nice look ;) 
+Specifically customized fork of ruTorrent for the Fat Cats Jacuzzi media server setup.
 
 ## Screenshots
 
@@ -16,12 +8,21 @@ This project is released under the GPLv3 license, for more details, take a look 
 [![](https://github.com/Novik/ruTorrent/wiki/images/scr2_small.jpg)](https://github.com/Novik/ruTorrent/wiki/images/scr2_big.jpg)
 [![](https://github.com/Novik/ruTorrent/wiki/images/scr3_small.jpg)](https://github.com/Novik/ruTorrent/wiki/images/scr3_big.jpg)
 
-## Download
+## What to know
 
- * [Development version](https://github.com/Novik/ruTorrent/tarball/master)
- * [Stable version](https://github.com/Novik/ruTorrent/releases)
+This fork REQUIRES that you are running an NGINX + php-fpm web stack. You still need to go through ALL the configuration files including whats in [conf/](conf) and [share/](share) and modify them as required.
 
-## Getting started
+The servers that this fork is intended to run on uses:
 
-  * There's no installation routine or compilation necessary. The sources are cloned/unpacked into a directory which is setup as document root of a web server of your choice (for detailed instructions see the [webserver wiki article](https://github.com/Novik/ruTorrent/wiki/WebSERVER)).
-  * After setting up the webserver `ruTorrent` itself needs to be configured. Instructions can be found in various articles in the [wiki](https://github.com/Novik/ruTorrent/wiki).
+* AlmaLinux 9 with the paid nginx-plus web stack and php-fpm 8.x
+  * php-fpm is configured with a second pool named `rutorrent` that runs within the `nginx` user and `rutorrent` group.
+* rTorrent's home directory is in `/var/lib/rtorrent` (this contains `rtorrent.rc` and the session folder that has the `*.lock` files)
+* rTorrent's base download directory is in `/mnt/data/rtorrent/downloads`
+* rTorrent's RPC socket is at `/run/rtorrent/rpc.sock`
+* ruTorrent is located in `/srv/www/rutorrent`
+* rTorrent runs under its own user and group
+  * nginx's user needs to be added to rTorrent's group
+* You are using the "DarkBetter" theme
+* You are a certified American (the default config uses date defaults for en-US)
+* You use the [\*arr](https://wiki.servarr.com/) stack for automatically downloading and sorting media
+* [Unpackerr](https://unpackerr.zip/) is used for automatically unpacking archives instead of the default `unpack` plugin.
