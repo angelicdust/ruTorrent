@@ -125,12 +125,11 @@ class rThrottle
 			new rXMLRPCCommand( "get_download_rate" ) ));
 		if($req->run() && !$req->fault)
 		{
-			global $throttleMaxSpeed;
 			$req1 = new rXMLRPCRequest();
 			if($req->val[0]==0)
-				$req1->addCommand(new rXMLRPCCommand( "set_upload_rate", $throttleMaxSpeed ));
+				$req1->addCommand(new rXMLRPCCommand( "set_upload_rate", 327625*1024 ));
 			if($req->val[1]==0)
-				$req1->addCommand(new rXMLRPCCommand( "set_download_rate", $throttleMaxSpeed ));
+				$req1->addCommand(new rXMLRPCCommand( "set_download_rate", 327625*1024 ));
 			if((($req->val[0]==0) || ($req->val[1]==0)) &&
 				(!$req1->run() || $req1->fault))
 				return(false);

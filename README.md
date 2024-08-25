@@ -15,10 +15,12 @@ This fork REQUIRES that you are running an NGINX + php-fpm web stack. You still 
 The servers that this fork is intended to run on uses:
 
 * AlmaLinux 9 with the paid nginx-plus web stack and php-fpm 8.x
-  * php-fpm is configured with a second pool named `rutorrent` that runs within the `nginx` user and `rutorrent` group.
+  * php-fpm is configured with a second pool named `rutorrent` that runs within the `nginx` user and `rtorrent` group.
 * rTorrent's home directory is in `/var/lib/rtorrent` (this contains `rtorrent.rc` and the session folder that has the `*.lock` files)
 * rTorrent's base download directory is in `/mnt/data/rtorrent/downloads`
 * rTorrent's RPC socket is at `/run/rtorrent/rpc.sock`
+* rTorrent is set to log to `/var/log/rtorrent`
+  * `/var/log/rtorrent/rutorrent` should exist and have the permissions set to `nginx:rtorrent`
 * ruTorrent is located in `/srv/www/rutorrent`
 * rTorrent runs under its own user and group
   * nginx's user needs to be added to rTorrent's group
