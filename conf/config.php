@@ -32,13 +32,19 @@
         "localhost.localdomain",
     );
     $pathToExternals = array(
-        "php"     => '/usr/bin/php',
-        "curl"    => '/usr/bin/curl',
-        "gzip"    => '/usr/bin/gzip',
-        "id"      => '/usr/bin/id',
-        "stat"    => '/usr/bin/stat',
-        "python"  => '/usr/bin/python3',
+        "7zip" => '/usr/local/bin/7zz', // https://www.7-zip.org/a/7z2408-linux-x64.tar.xz:/7zz -> /usr/local/bin/7zz
+        "curl" => '/usr/bin/curl',
+        "ffmpeg" => '/usr/bin/ffmpeg',
+        "gzip" => '/usr/bin/gzip',
+        "id" => '/usr/bin/id',
+        "mediainfo" => '/usr/bin/mediainfo',
+        "pgrep" => '/usr/bin/pgrep',
+        "php" => '/usr/bin/php',
+        "python" => '/usr/bin/python3',
         "python3" => '/usr/bin/python3',
+        "rar" => '/usr/bin/rar',
+        "sox" => '/usr/bin/sox',
+        "stat" => '/usr/bin/stat',
     );
     $profilePath = '../../share';
     $profileMask = 0770;
