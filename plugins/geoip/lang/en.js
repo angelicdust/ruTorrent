@@ -12,6 +12,7 @@
  theUILang.peerCommentLabel	= "Enter new comment for peer";
  theUILang.commentName		= "Comment";
  theUILang.countryName		= "Country";
+ theUILang.geoipUnavailable      = "The GeoIP PHP extension is unavailable. Please configure it to use the GeoIP plugin."
 
  theUILang.country = new Array();
  theUILang.country[ "ad" ] = "Andorra";

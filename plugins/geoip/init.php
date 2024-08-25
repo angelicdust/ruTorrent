@@ -18,4 +18,5 @@ if( $retrieveHost || $retrieveCountry || $retrieveComments )
 		$jResult .= "plugin.retrieveComments = true;";
 } 
 else
-	$jResult .= "plugin.disable();";
+
+	$jResult .= "plugin.disable(); plugin.showError('theUILang.geoipUnavailable');";
