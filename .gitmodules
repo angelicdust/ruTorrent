@@ -10,9 +10,6 @@
 [submodule "plugins/trackerstatus"]
 	path = plugins/trackerstatus
 	url = https://github.com/Micdu70/rutorrent-trackerstatus.git
-[submodule "plugins/hostname"]
-	path = plugins/hostname
-	url = https://github.com/rozhuk-im/rutorrent-hostname.git
 [submodule "plugins/toggle_details_button"]
 	path = plugins/toggle_details_button
 	url = https://github.com/Micdu70/plugin-toggle_details_button-ruTorrent.git
