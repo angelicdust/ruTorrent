@@ -1,3 +1,6 @@
 [submodule "plugins/ratiocolor"]
 	path = plugins/ratiocolor
 	url = https://github.com/angelicdust/rutorrent-ratiocolor.git
+[submodule "plugins/discordpush"]
+	path = plugins/discordpush
+	url = https://github.com/angelicdust/rutorrent-discord.git
