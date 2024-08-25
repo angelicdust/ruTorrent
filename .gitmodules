@@ -1,0 +1,3 @@
+[submodule "plugins/ratiocolor"]
+	path = plugins/ratiocolor
+	url = https://github.com/angelicdust/rutorrent-ratiocolor.git
