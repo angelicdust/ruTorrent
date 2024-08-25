@@ -40,3 +40,6 @@
 [submodule "plugins/nfo"]
 	path = plugins/nfo
 	url = https://github.com/phracker/ruTorrent-nfo.git
+[submodule "plugins/unretracker"]
+	path = plugins/unretracker
+	url = https://github.com/angelicdust/rutorrent-unretracker.git
