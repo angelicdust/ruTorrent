@@ -1,3 +1,3 @@
 <?php
 
-$defaultTheme = ""; // May be "", "Oblivion", "Dark", "Blue" or "Acid"
+$defaultTheme = "DarkBetter"; // May be "", "Oblivion", "Dark", "Blue" or "Acid"
