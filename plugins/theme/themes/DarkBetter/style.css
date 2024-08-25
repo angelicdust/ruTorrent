@@ -62,14 +62,16 @@ category-list {
 }
 
 category-panel::part(heading) {
-  background-color: #111111;
   border-bottom: 1px solid #333333;
   border-top: 1px solid #333333;
-  background: url(./images/pnl_open.svg) 4px no-repeat;
-  background-size: 14px;
+  background: #111111 url(./images/pnl_open.svg) 4px no-repeat;
+  background-size: 12px;
 }
 category-panel[closed]::part(heading) {
-  background: url(./images/pnl_close.svg) 4px no-repeat;
+  border-bottom: 1px solid #333333;
+  border-top: 1px solid #333333;
+  background: #111111 url(./images/pnl_close.svg) 4px no-repeat;
+  background-size: 12px;
 }
 
 
@@ -81,8 +83,8 @@ panel-label {
   --icon-letter-color: #999999;
   --icon-letter-background-color: #111111;
   --icon-offset: 0px 0px;
-  --icon-size: 18px;
-  --icon-image-size: 18px;
+  --icon-size: 16px;
+  --icon-image-size: 16px;
 }
 
 panel-label[selected] {
