@@ -1,4 +1,6 @@
-#meter-disk-value { float: left; border: 1px inset #BBBBBB; border-bottom: none;}
-#meter-disk-text { position: relative; text-align: left; float: left; width: 0px; height: 0px; overflow: visible; left: 40%; font-size: 11px; font-family: Tahoma, Arial, Helvetica, sans-serif; z-index: 1; }
-#meter-disk-holder { width: 100px; height: 18px; line-height: 18px; margin-left: 25px; }
-#meter-disk-td { background: url(./images/disk.png) 5px no-repeat; }
+#meter-disk-value-outer { float: left; border: 1px inset #646464; background-color: #808080; margin-right: 2px; width: 100px; }
+#meter-disk-value { float: left; border: none; }
+#meter-disk-text { color: black; position: relative; text-align: center; float: left; width: 0px; height: 0px; overflow: visible; left: 40%; font-size: 11px; font-family: Tahoma, Arial, Helvetica, sans-serif; z-index: 1; }
+#meter-disk-detail { line-height: 18px; text-align: center; font-size: 11px; font-family: Tahoma, Arial, Helvetica, sans-serif; }
+#meter-disk-holder { height: 18px; line-height: 18px; }
+#meter-disk-td { display: block; width: 16px; height: 16px; background: url(./images/disk.png) 0px no-repeat; }
