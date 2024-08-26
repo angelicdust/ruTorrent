@@ -21,7 +21,7 @@
 	url = https://github.com/Micdu70/rutorrent-instantsearch.git
 [submodule "plugins/force_save_session"]
 	path = plugins/force_save_session
-	url = https://github.com/orobardet/rutorrent-force_save_session.git
+	url = https://github.com/angelicdust/rutorrent-force_save_session.git
 [submodule "plugins/geoip2"]
 	path = plugins/geoip2
 	url = https://github.com/angelicdust/geoip2-rutorrent.git
